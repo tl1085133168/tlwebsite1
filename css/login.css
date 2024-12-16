@@ -14,6 +14,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 form {
     display: none;
@@ -73,10 +75,16 @@ form.active {
 
 /* 主容器样式 */
 .container {
-    max-width: 450px;
+    flex: 1;
+    width: 400px; /* 设置固定宽度 */
+    max-width: 90%; /* 确保在小屏幕上不会溢出 */
     margin: 40px auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 /* 表单样式 */
 .form-box {
@@ -260,7 +268,8 @@ input.error {
     background: linear-gradient(to right, #2c3e50, #3498db);
     color: white;
     padding: 40px 0 20px;
-    margin-top: 60px;
+    width: 100%;
+    margin-top: auto; /* 将页脚推到底部 */
 }
 
 .footer-content {
@@ -269,10 +278,13 @@ input.error {
     display: flex;
     justify-content: space-around;
     padding: 0 20px;
+    flex-wrap: wrap; /* 允许在小屏幕上换行 */
 }
 
 .footer-section {
     margin-bottom: 20px;
+    min-width: 200px; /* 设置最小宽度 */
+    padding: 0 15px; /* 添加一些内边距 */
 }
 
 .footer-section h3 {
@@ -290,4 +302,6 @@ input.error {
     display: flex;
     gap: 15px;
 }
+
+
 
