@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>航班订票系统</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">航班订票系统</div>
+            <div class="nav-links">
+                <a href="#">首页</a>
+                <a href="#">航班查询</a>
+                <a href="#">我的订单</a>
+                <a href="#">会员中心</a>
+                <a href="#">登录/注册</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <form class="search-form">
+            <div class="flight-type">
+                <label>
+                    <input type="radio" name="trip-type" value="single" checked> 单程
+                </label>
+                <label>
+                    <input type="radio" name="trip-type" value="round"> 往返
+                </label>
+                <label>
+                    <input type="radio" name="trip-type" value="multi"> 多程
+                </label>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>出发城市</label>
+                    <input type="text" placeholder="请输入出发城市">
+                </div>
+                <div class="form-group">
+                    <label>到达城市</label>
+                    <input type="text" placeholder="请输入到达城市">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>出发日期</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>返回日期</label>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>乘客人数</label>
+                    <select>
+                        <option>1人</option>
+                        <option>2人</option>
+                        <option>3人</option>
+                        <option>4人</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>舱位等级</label>
+                    <select>
+                        <option>经济舱</option>
+                        <option>商务舱</option>
+                        <option>头等舱</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="search-btn">搜索航班</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>客服热线：400-123-4567 | 帮助中心 | 关于我们 | 隐私政策</p>
+    </footer>
+	<script src="js/index.js"></script>
+</body>
+</html>
